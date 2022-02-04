@@ -1,0 +1,27 @@
+{
+  "name": "klym/multifields-parser",
+  "type": "EvolutionCMS-Package",
+  "license": "GPL-2.0",
+  "description": "Parsing multifields plugin values for Evolution CMS",
+  "authors": [
+    {
+      "name": "Alexandr Klymas",
+      "email": "alexandr.klymas@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "EvolutionCMS\\MFParser\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EvolutionCMS\\MFParser\\MFParserServiceProvider"
+      ]
+    }
+  }
+}
